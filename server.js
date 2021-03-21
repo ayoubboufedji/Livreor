@@ -1,3 +1,4 @@
+const { response } = require('express');
 let express = require('express');
 let app = express();
 
@@ -11,5 +12,12 @@ app.get('/', (request, response) => {
 
   //response.send('salut');
 });
+
+app.post('/',(request,response) => {
+
+  console.log(request)
+
+
+})
 
 app.listen(8080);
